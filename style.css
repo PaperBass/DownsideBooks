@@ -22,6 +22,11 @@
     width: 100%;
 }
 
+footer {
+    background-color: lightgray;
+    padding: 3px 10px 3px 10px;
+    max-width: 100%;
+}
 
 .bookContainer img {
     height: 100%;
@@ -32,28 +37,42 @@
     padding: 5px;
 }
 
-.column {
+.topColomn {
     float: left;
-    width: 33.33%;
+    width: 50%;
 }
 
-.row:after {
+.topRow::after {
     content: "";
     display: table;
     clear: both;
 }
 
-#myLinks {
-    display: none;
+.bottomColumn {
+    float: left;
+    width: 33.33%;
 }
 
-#bottomNavMenu {
+.bottomRow:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#bottomLinks, #topLinks {
+    display: none;
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+}
+
+#bottomNavMenu, #topNavMenu {
     display: block;
     float: right;
     max-width: 17px;
 }
 
-#cancelMenu {
+#cancelMenu, #topNavMenu {
     display: block;
     float: right;
     max-width: 17px;

@@ -8,44 +8,64 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="siteTitle">
-        <h1>Downside Books</h1>
-    </div>
-
-    <div class="bookContainer">
-        <figure><img src="images/magnolia.jpeg" alt="Magnolia Book Cover" ></figure>
-    </div>  
-    <figcaption>
-        <p class="genre">poetry</p>
-        <h3 class="title">Womb Bo</h3>
-        <h5 class="author">L.8. Soda</h5>
-    </figcaption>
-    
-    
-    <div class="bookContainer">
-        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
-    </div> 
-    <figcaption>
-        <p class="genre">essay</p>
-        <h3 class="title">The Lice Years</h3>
-        <h5 class="author">Mom Girl</h5>
-    </figcaption>
-
-
-    <footer>
-        <div class="row">
-            <div class="column">contact:</div>
-            <div class="column">downside&#64;gmail.com</div>
-            <div class="column">
-                <div class="bottomNav">
-                    <div id="myLinks">
-                        <a href="index.html">Home</a>
-                        <a href="about.html">About</a>
-                        <a href="submit.html">Submit</a>
-                        <img id="cancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel" onclick="displayLinks()">
+    <header>
+        <div class="topRow">
+            <div class="topColumn">
+                <div class="siteTitle">
+                    <h1>Downside Books</h1>
+                </div>
+            </div>
+            <div class="topColumn">
+                <div id="topNav">
+                    <div id="topLinks">
+                        <a href="index.html" target="_blank">Home</a>
+                        <a href="about.html" target="_blank">About</a>
+                        <a href="submit.html" target="_blank">Submit</a>
+                        <img id="cancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel" onclick="topLinks()">
                     </div>
                 </div>
-                <img id="bottomNavMenu" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu" onclick="displayLinks()">
+                <img id="topNavMenu" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu" onclick="topLinks()">
+            </div>
+        </div>
+    </header>
+
+    <article>
+        
+
+        <div class="bookContainer">
+            <figure><img src="images/magnolia.jpeg" alt="Magnolia Book Cover" ></figure>
+        </div>  
+        <figcaption>
+            <p class="genre">poetry</p>
+            <h3 class="title">Womb Bo</h3>
+            <h5 class="author">L.8. Soda</h5>
+        </figcaption>
+        
+        
+        <div class="bookContainer">
+            <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+        </div> 
+        <figcaption>
+            <p class="genre">essay</p>
+            <h3 class="title">The Lice Years</h3>
+            <h5 class="author">Mom Girl</h5>
+        </figcaption>
+    </article>
+
+    <footer>
+        <div class="bottomRow">
+            <div class="bottomColumn">contact:</div>
+            <div class="bottomColumn">downside&#64;gmail.com</div>
+            <div class="bottomColumn">
+                <div id="bottomNav">
+                    <div id="bottomLinks">
+                        <a href="index.html" target="_blank">Home</a>
+                        <a href="about.html" target="_blank">About</a>
+                        <a href="submit.html" target="_blank">Submit</a>
+                        <img id="cancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel" onclick="bottomLinks()">
+                    </div>
+                </div>
+                <img id="bottomNavMenu" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu" onclick="bottomLinks()">
             </div>
         </div>
     </footer>
