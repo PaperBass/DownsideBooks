@@ -58,12 +58,17 @@ header {
     clear: both;
 }
 
-#bottomLinks,
 #topLinks {
     display: none;
     font-style: italic;
     font-size: 10px;
     text-align: center;
+}
+
+.linkList li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 27.44px;
 }
 
 #topNavMenu {
@@ -74,14 +79,27 @@ header {
     padding-right: 20px;
 }
 
+#topCancelMenu {
+    display: block;
+    float: right;
+    max-width: 17px;
+    padding-right: 10px;
+}
+
 #bottomNavMenu {
     display: block;
     float: right;
     max-width: 17px;
 }
 
-#cancelMenu,
-#topCancelMenu {
+#bottomLinks {
+    display: none;
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+}
+
+#cancelMenu {
     display: block;
     float: right;
     max-width: 17px;
