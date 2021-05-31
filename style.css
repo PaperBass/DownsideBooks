@@ -31,3 +31,30 @@
     border-radius: 50px;
     padding: 5px;
 }
+
+.column {
+    float: left;
+    width: 33.33%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#myLinks {
+    display: none;
+}
+
+#bottomNavMenu {
+    display: block;
+    float: right;
+    max-width: 17px;
+}
+
+#cancelMenu {
+    display: block;
+    float: right;
+    max-width: 17px;
+}
