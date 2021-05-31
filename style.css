@@ -66,14 +66,19 @@ header {
     text-align: center;
 }
 
-#bottomNavMenu,
 #topNavMenu {
+    display: block;
+    float: right;
+    max-width: 25px;
+    padding-top: 27.44px;
+    padding-right: 20px;
+}
+
+#bottomNavMenu {
     display: block;
     float: right;
     max-width: 17px;
 }
-
-
 
 #cancelMenu,
 #topCancelMenu {
