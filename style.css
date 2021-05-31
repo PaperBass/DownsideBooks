@@ -1,0 +1,33 @@
+.siteTitle {
+    text-align: center;
+    color: lightgray;
+}
+
+.title {
+    text-align: center;
+}
+
+.author {
+    text-align: center;
+}
+
+.genre {
+    text-align: center;
+    color: lightslategrey;
+    font-style: italic;
+}
+
+.bookContainer {
+    position: relative;
+    width: 100%;
+}
+
+
+.bookContainer img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: 2px solid rgba(144, 238, 144, 0.801);
+    border-radius: 50px;
+    padding: 5px;
+}
