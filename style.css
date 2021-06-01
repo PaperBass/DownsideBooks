@@ -41,7 +41,10 @@ header {
 }
 
 #topCancelMenu {
+    float: right;
     max-width: 17px;
+    padding-right: 20px;
+    padding-top: 2.5em;
 }
 
 
@@ -75,19 +78,11 @@ header {
 
 .bottomColumn {
     display: flex;
-    /* float: left; */
-    /* width: 33.33%; */
 }
 
 .bottomColumn > * {
     width: 100%;
 }
-
-/* .bottomRow:after {
-    content: "";
-    display: table;
-    clear: both;
-} */
 
 
 #bottomNavMenu {
