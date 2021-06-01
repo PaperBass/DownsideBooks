@@ -74,15 +74,20 @@ header {
 }
 
 .bottomColumn {
-    float: left;
-    width: 33.33%;
+    display: flex;
+    /* float: left; */
+    /* width: 33.33%; */
 }
 
-.bottomRow:after {
+.bottomColumn > * {
+    width: 100%;
+}
+
+/* .bottomRow:after {
     content: "";
     display: table;
     clear: both;
-}
+} */
 
 
 #bottomNavMenu {
@@ -103,7 +108,6 @@ header {
     float: right;
     max-width: 17px;
 }
-
 
 footer {
     background-color: lightgray;
