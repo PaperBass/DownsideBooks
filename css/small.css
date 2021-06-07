@@ -8,52 +8,76 @@ body {
     font-size: 16px;
 }
 
-header, nav {
-    max-width: 100%;
+header {
     background-color: lightslategray;
 }
 
 .siteTitle {
-    text-align: center;
     color: lightgray;
+    padding-left: .7rem;
+    font-size: 40px;
 }
 
-.topColumn {
+.titleRow {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
 }
 
-.topColumn > * {
+
+/* .titleRow > * {
     width: 100%;
+} */
+
+
+.navContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
 }
 
 #topLinks {
     display: none;
     font-style: italic;
-    font-size: 10px;
-    text-align: center;
-}
-
-.linkList li {
     list-style: none;
-    display: inline-block;
-    margin-top: 1.5em;
-    font-size: 14px;
-    padding: 5px;
+    margin: -3rem .5rem 1rem;
+    font-size: 40px;
+    background-color: lavenderblush;
+    border-radius: 20px;
+    box-shadow: -4px 7px 4px rgba(0, 0, 0, .3);
 }
 
-#topNavMenu {
-    float: right;
-    max-width: 25px;
-    max-height: 25px;
-    padding-top: 27.44px;
-    padding-right: 20px;
+#topLinks>li{
+    padding: .4rem 1rem;
 }
+
+/* .linkList{
+    list-style: none;
+    display: flex;
+    margin: .5rem;
+    font-size: 40px;
+   
+} */
+
+.linkList li{
+    padding: .2rem;
+}
+
+.menuButton{
+    align-self: center;
+    padding-right: 3rem;
+}
+ #topNavMenu {
+    /* float: right; */
+    max-width: 40px;
+}
+
 
 #topCancelMenu {
-    float: right;
-    max-width: 17px;
-    padding-right: 20px;
-    padding-top: 2.5em;
+   max-width: 40px;
 }
 
 
