@@ -8,8 +8,8 @@ body {
     font-size: 16px;
 }
 
-header {
-    background-color: lightslategray;
+.sticky ~ .content {
+    padding-top: 100px;
 }
 
 .siteTitle {
@@ -18,11 +18,12 @@ header {
     font-size: 40px;
 }
 
-.titleRow {
+#titleRow {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
+    background-color: lightslategray;
 }
 
 
@@ -31,7 +32,7 @@ header {
 } */
 
 
-.navContainer{
+.navContainer {
     display: flex;
     flex-direction: row;
 }
@@ -49,9 +50,17 @@ header {
 }
 
 #topLinks>li{
-    padding: .4rem;
+    padding: .3rem .5rem 0  ;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }
+
+  
 
 .menuButton{
     align-self: center;
