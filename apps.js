@@ -1,5 +1,5 @@
 function topLinks() {
-    var y = document.getElementById('topNavMenu');
+    var y = document.getElementById('topNavBurger');
     var x = document.getElementById('topLinks');
     if (x.style.display === "flex") {
         x.style.display = "none";
