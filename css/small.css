@@ -49,18 +49,17 @@ header {
 }
 
 #topLinks>li{
-    padding: .4rem 1rem;
+    padding: .4rem;
 }
 
-#topLinks:nth-child(0) {
-    justify-content: center;
-}
 
 .menuButton{
     align-self: center;
     padding-right: 3rem;
 }
  #topNavBurger {
+    padding-top: 2rem;
+    padding-right: 1.5rem;
     max-width: 40px;
 }
 
