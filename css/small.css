@@ -34,9 +34,6 @@ header {
 .navContainer{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    
-    
 }
 
 #topLinks {
@@ -63,8 +60,7 @@ header {
     align-self: center;
     padding-right: 3rem;
 }
- #topNavMenu {
-    /* float: right; */
+ #topNavBurger {
     max-width: 40px;
 }
 
