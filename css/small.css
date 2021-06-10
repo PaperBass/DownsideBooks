@@ -43,27 +43,21 @@ header {
     display: none;
     font-style: italic;
     list-style: none;
-    margin: -3rem .5rem 1rem;
-    font-size: 40px;
+    /* margin: -3rem .5rem 1rem; */
+    font-size: 30px;
     background-color: lavenderblush;
     border-radius: 20px;
     box-shadow: -4px 7px 4px rgba(0, 0, 0, .3);
+    padding-inline-start: 0;
+    flex-wrap: wrap;
 }
 
 #topLinks>li{
     padding: .4rem 1rem;
 }
 
-/* .linkList{
-    list-style: none;
-    display: flex;
-    margin: .5rem;
-    font-size: 40px;
-   
-} */
-
-.linkList li{
-    padding: .2rem;
+#topLinks:nth-child(0) {
+    justify-content: center;
 }
 
 .menuButton{
@@ -78,6 +72,7 @@ header {
 
 #topCancelMenu {
    max-width: 40px;
+   justify-self: right;
 }
 
 

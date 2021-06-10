@@ -1,11 +1,11 @@
 function topLinks() {
     var y = document.getElementById('topNavMenu');
     var x = document.getElementById('topLinks');
-    if (x.style.display === "block") {
+    if (x.style.display === "flex") {
         x.style.display = "none";
-        y.style.display = "block";
+        y.style.display = "flex";
     } else {
-        x.style.display = "block";
+        x.style.display = "flex";
         y.style.display = "none";
     }
 }
