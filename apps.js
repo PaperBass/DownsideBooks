@@ -1,6 +1,6 @@
 function topLinks() {
-    var y = document.getElementById('topNavBurger');
-    var x = document.getElementById('topLinks');
+    let y = document.getElementById('topNavBurger');
+    let x = document.getElementById('topLinks');
     if (x.style.display === "flex") {
         x.style.display = "none";
         y.style.display = "flex";
@@ -11,8 +11,8 @@ function topLinks() {
 }
 
 function bottomLinks() {
-    var y = document.getElementById('bottomNavMenu');
-    var x = document.getElementById('bottomLinks');
+    let y = document.getElementById('bottomNavMenu');
+    let x = document.getElementById('bottomLinks');
     if (x.style.display === "block") {
         x.style.display = "none";
         y.style.display = "block";
@@ -26,10 +26,10 @@ function bottomLinks() {
 window.onscroll = function() {myFunction()};
 
 // Get the navbar
-var navbar = document.getElementById("titleRow");
+let navbar = document.getElementById("titleRow");
 
 // Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function myFunction() {
