@@ -105,6 +105,7 @@ replaceName();
                   let name = document.getElementsByClassName("spanName");
                   for (var i = 0; i < name.length; i++) {
                       name[i].innerHTML = userName;
+                      name[i].value = userName; //if a name has been saved in local storage, the name will appear in intro submit field
                   }
               }
 
