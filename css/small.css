@@ -21,9 +21,6 @@ a:link {
     display: block;
 }
 
-.introTitle {
-    
-}
 
 .errorMessage {
     display: none;
@@ -103,6 +100,16 @@ a:link {
    justify-self: right;
 }
 
+/* end navigation formatting */
+
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+article > h3 {
+    text-justify: center;
+}
 
 .bookTitle {
     text-align: center;
@@ -177,12 +184,18 @@ footer {
 /* medium media query */
 @media only screen and (min-width: 768px) {
 
+    /* need to change burger menue to visible links */
     .titleRow {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
   
+    article {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
 
 } /* end of medium media query */
