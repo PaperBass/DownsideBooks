@@ -102,14 +102,39 @@ const userName = localStorage.getItem('nameInput');
 
 replaceName();
               function replaceName() {
-                  let name = document.getElementsByClassName("spanName");
-                  for (var i = 0; i < name.length; i++) {
-                      name[i].innerHTML = userName;
-                      name[i].value = userName; //if a name has been saved in local storage, the name will appear in intro submit field
+                  let spanName = document.getElementsByClassName("spanName");
+                  for (var i = 0; i < spanName.length; i++) {
+                      spanName[i].innerHTML = userName;
+                      spanName[i].value = userName; //if a name has been saved in local storage, the name will appear in intro submit field
                   }
               }
 
+rememberUser();
+              function rememberUser() {
+                if (userName) {
+                  displayText();
+                  function displayText() {
+                      let texts = document.getElementsByClassName("hidden");
+                      for (var i = 0; i < texts.length; i++) {
+                          texts[i].style.display = "block";
+                      }
+                  } // display website
 
+              hideIntro();
+              function hideIntro() {
+                      let intro = document.querySelectorAll(".intro,.errorMessage");
+                      for (var i = 0; i < intro.length; i++) {
+                          intro[i].style.display = "none";
+                      }
+                  }
+                } // hide introduction
+              };
+            
+
+
+              
+                
+              
   
 
 

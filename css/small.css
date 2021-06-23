@@ -8,6 +8,10 @@ body {
     font-size: 16px;
 }
 
+a:link {
+    text-decoration: none;
+}
+
 /* hides content behind intro screen */
 .hidden {
     display: none;
@@ -15,6 +19,10 @@ body {
 
 .intro {
     display: block;
+}
+
+.introTitle {
+    
 }
 
 .errorMessage {
@@ -32,6 +40,8 @@ body {
     padding-top: 100px;
 }
 
+
+
 .siteTitle {
     color: lightgray;
     padding-left: .7rem;
@@ -47,10 +57,6 @@ body {
 }
 
 
-/* .titleRow > * {
-    width: 100%;
-} */
-
 
 .navContainer {
     display: flex;
@@ -61,7 +67,6 @@ body {
     display: none;
     font-style: italic;
     list-style: none;
-    /* margin: -3rem .5rem 1rem; */
     font-size: 30px;
     background-color: lavenderblush;
     border-radius: 20px;
