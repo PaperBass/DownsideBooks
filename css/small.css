@@ -8,6 +8,26 @@ body {
     font-size: 16px;
 }
 
+/* hides content behind intro screen */
+.hidden {
+    display: none;
+}
+
+.intro {
+    display: block;
+}
+
+.errorMessage {
+    display: none;
+    color: red;
+}
+
+#inputName {
+    border-radius: 5px;
+}
+
+/* end formatting for intro screen */
+
 .sticky ~ .content {
     padding-top: 100px;
 }

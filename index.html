@@ -18,7 +18,27 @@
 </head>
 
 <body>
-    <header>
+    <aside class="intro">
+
+        <h1 class="introTitle">
+            Downside Books
+        </h1>
+
+        <p>
+            I'm glad you're here, but since you've come all this way, why don't you tell me a little about yourself?
+        </p>
+
+        <form id="name">
+            <label for="firstName">First Name</label>
+            <input type="text" id="inputName" name="firstName">
+            <input type="submit" value="Submit">
+        </form>
+
+        <div class="errorMessage">Tell me who you are or get out!</div>
+
+    </aside>
+
+    <header class="hidden">
         <div id="titleRow">
             <h1 class="siteTitle">Downside Books</h1>
             <div class="navContainer">
@@ -49,7 +69,7 @@
 
 
 
-    <main>
+    <main class="hidden">
         <article>
 
            
@@ -103,7 +123,7 @@
 
     </main>
 
-    <footer>
+    <footer class="hidden">
         <div class="bottomRow">
             <div>contact:</div>
             <div>downside&#64;gmail.com</div>
