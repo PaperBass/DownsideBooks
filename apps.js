@@ -49,29 +49,29 @@ function scrollFunction() {
 window.addEventListener("DOMContentLoaded" , function(e) {
   console.log("Page Loaded")
 
-  const addForm = document.forms['name'];
-  if (addForm) {
-      addForm.addEventListener('submit', function(e) {
+  const findForm = document.forms['name'];
+  if (findForm) {
+      findForm.addEventListener('submit', function(e) {
           e.preventDefault();
-          const value = addForm.querySelector('input[type="text"]').value;
-          if (value === "") {
+          const submitValue = findForm.querySelector('input[type="text"]').value;
+          if (submitValue === "") {
               document.getElementsByClassName("errorMessage")[0].style.display = "block"
           } else {
-              console.log(value);
+              console.log(submitValue);
 
               const saveToLocalStorage = () => {
-                  localStorage.setItem('nameInput', value)
+                  localStorage.setItem('nameInput', submitValue)
               }
 
               saveToLocalStorage();
 
-              const storedInput = localStorage.getItem('nameInput');
+              const userName = localStorage.getItem('nameInput');
 
               replaceName();
                   function replaceName() {
                       let name = document.getElementsByClassName("spanName");
                       for (var i = 0; i < name.length; i++) {
-                          name[i].innerHTML = storedInput;
+                          name[i].innerHTML = userName;
                       }
                   }
               displayText();
@@ -96,15 +96,21 @@ window.addEventListener("DOMContentLoaded" , function(e) {
   }); 
 
 // replaces name across all instances
-const storedInput = localStorage.getItem('nameInput');
+const userName = localStorage.getItem('nameInput');
 
 replaceName();
               function replaceName() {
                   let name = document.getElementsByClassName("spanName");
                   for (var i = 0; i < name.length; i++) {
-                      name[i].innerHTML = storedInput;
+                      name[i].innerHTML = userName;
                   }
               }
+
+
+  
+
+
+
 // document.getElementsByClassName("spanName").item(0).innerHTML = localStorage.getItem("nameInput");
 
 // function toggleMenu() {
