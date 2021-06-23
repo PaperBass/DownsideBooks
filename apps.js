@@ -49,23 +49,24 @@ function scrollFunction() {
 window.addEventListener("DOMContentLoaded" , function(e) {
   console.log("Page Loaded")
 
-  const findForm = document.forms['name'];
-  if (findForm) {
-      findForm.addEventListener('submit', function(e) {
-          e.preventDefault();
-          const submitValue = findForm.querySelector('input[type="text"]').value;
-          if (submitValue === "") {
-              document.getElementsByClassName("errorMessage")[0].style.display = "block"
+  const findForm = document.forms['name']; // finds the name form in index.html
+
+  if (findForm) { // if the form is found, this function operates
+      findForm.addEventListener('submit', function(e) { // the function includes an event listener for the submit button
+          e.preventDefault(); // prevents the page's attempt to save to server which loads a 404
+          const submitValue = findForm.querySelector('input[type="text"]').value; //creates a constant with the value of the text field in the name form
+          if (submitValue === "") { 
+              document.getElementsByClassName("errorMessage")[0].style.display = "block" // if the value is empty, an error message is displayed
           } else {
               console.log(submitValue);
 
               const saveToLocalStorage = () => {
                   localStorage.setItem('nameInput', submitValue)
-              }
+              } // if value="" is false, console log the value and create save to local storage function which saves value in local storage
 
-              saveToLocalStorage();
+              saveToLocalStorage(); //use local storage function
 
-              const userName = localStorage.getItem('nameInput');
+              const userName = localStorage.getItem('nameInput'); //assign a constant for the local storage element
 
               replaceName();
                   function replaceName() {
@@ -73,14 +74,15 @@ window.addEventListener("DOMContentLoaded" , function(e) {
                       for (var i = 0; i < name.length; i++) {
                           name[i].innerHTML = userName;
                       }
-                  }
+                  } // use local storage element to replace text within spanName class
+
               displayText();
                   function displayText() {
                       let texts = document.getElementsByClassName("hidden");
                       for (var i = 0; i < texts.length; i++) {
                           texts[i].style.display = "block";
                       }
-                  }
+                  } // display website
 
               hideIntro();
               function hideIntro() {
@@ -89,13 +91,13 @@ window.addEventListener("DOMContentLoaded" , function(e) {
                           intro[i].style.display = "none";
                       }
                   }
-              }
+              } // hide introduction
 
           });
       }
   }); 
 
-// replaces name across all instances
+// replaces name across all instances outside of intro javascript funtion
 const userName = localStorage.getItem('nameInput');
 
 replaceName();
