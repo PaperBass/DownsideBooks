@@ -56,7 +56,8 @@ window.addEventListener("DOMContentLoaded", function (e) {
             e.preventDefault(); // prevents the page's attempt to save to server which loads a 404
             const submitValue = findForm.querySelector('input[type="text"]').value; //creates a constant with the value of the text field in the name form
             if (submitValue === "") {
-                document.getElementsByClassName("errorMessage")[0].style.display = "block" // if the value is empty, an error message is displayed
+                return false;
+                // document.getElementsByClassName("errorMessage")[0].style.display = "block" // if the value is empty, an error message is displayed
             } else {
                 console.log(submitValue);
 

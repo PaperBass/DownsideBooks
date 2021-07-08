@@ -21,7 +21,10 @@ a:link {
 
 .intro {
     display: block;
+    color: white;
 }
+
+
 
 
 .errorMessage {
