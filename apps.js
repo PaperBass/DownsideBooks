@@ -34,6 +34,8 @@ window.onscroll = function () { scrollFunction() };
 
 let navbar = document.getElementById("burger");
 
+let burger = document.getElementById('topNavBurger');
+
 
 let sticky = navbar.offsetTop;
 
@@ -41,8 +43,10 @@ let sticky = navbar.offsetTop;
 function scrollFunction() {
     if (window.pageYOffset > sticky) {
         navbar.classList.add("sticky")
+        burger.style.opacity = "0.5";
     } else {
         navbar.classList.remove("sticky");
+        burger.style.opacity = "1";
     }
 }
 

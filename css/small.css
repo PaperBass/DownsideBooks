@@ -42,9 +42,6 @@ a:link {
 
 /* end formatting for intro screen */
 
-.sticky ~ .content {
-    padding-top: 100px;
-}
 
 
 
@@ -88,7 +85,6 @@ a:link {
 .sticky {
     position: fixed;
     top: 0;
-    
     z-index: 1;
     
   }
@@ -111,6 +107,13 @@ a:link {
    justify-self: right;
 }
 
+.sticky ~ .content {
+    padding-top: 100px;
+}
+
+.navContainer.sticky {
+    justify-content: flex-end;
+}
 /* end navigation formatting */
 
 .gridContainer {
