@@ -32,7 +32,7 @@ function bottomLinks() {
 window.onscroll = function () { scrollFunction() };
 
 
-let navbar = document.getElementById("titleRow");
+let navbar = document.getElementById("burger");
 
 
 let sticky = navbar.offsetTop;
