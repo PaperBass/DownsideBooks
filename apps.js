@@ -28,114 +28,136 @@ function bottomLinks() {
 // end navigation burger link toggle
 
 
-// When the user scrolls the page, execute myFunction
-window.onscroll = function() {scrollFunction()};
+// scrolling script
+window.onscroll = function () { scrollFunction() };
 
-// Get the navbar
+
 let navbar = document.getElementById("titleRow");
 
-// Get the offset position of the navbar
+
 let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function scrollFunction() {
-  if (window.pageYOffset > sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
+    if (window.pageYOffset > sticky) {
+        navbar.classList.add("sticky")
+    } else {
+        navbar.classList.remove("sticky");
+    }
 }
 
-window.addEventListener("DOMContentLoaded" , function(e) {
-  console.log("Page Loaded")
+window.addEventListener("DOMContentLoaded", function (e) {
+    console.log("Page Loaded")
 
-  const findForm = document.forms['name']; // finds the name form in index.html
+    const findForm = document.forms['name']; // finds the 'name' form in index.html
 
-  if (findForm) { // if the form is found, this function operates
-      findForm.addEventListener('submit', function(e) { // the function includes an event listener for the submit button
-          e.preventDefault(); // prevents the page's attempt to save to server which loads a 404
-          const submitValue = findForm.querySelector('input[type="text"]').value; //creates a constant with the value of the text field in the name form
-          if (submitValue === "") { 
-              document.getElementsByClassName("errorMessage")[0].style.display = "block" // if the value is empty, an error message is displayed
-          } else {
-              console.log(submitValue);
+    if (findForm) { // if the form is found, this function operates
+        findForm.addEventListener('submit', function (e) { // the function includes an event listener for the submit button
+            e.preventDefault(); // prevents the page's attempt to save to server which loads a 404
+            const submitValue = findForm.querySelector('input[type="text"]').value; //creates a constant with the value of the text field in the name form
+            if (submitValue === "") {
+                document.getElementsByClassName("errorMessage")[0].style.display = "block" // if the value is empty, an error message is displayed
+            } else {
+                console.log(submitValue);
 
-              const saveToLocalStorage = () => {
-                  localStorage.setItem('nameInput', submitValue)
-              } // if value="" is false, console log the value and create save to local storage function which saves value in local storage
+                const saveToLocalStorage = () => {
+                    localStorage.setItem('nameInput', submitValue)
+                } // if value="" is false, console log the value and create save to local storage function which saves value in local storage
 
-              saveToLocalStorage(); //use local storage function
+                saveToLocalStorage(); //use local storage function
 
-              const userName = localStorage.getItem('nameInput'); //assign a constant for the local storage element
+                const userName = localStorage.getItem('nameInput'); //assign a constant for the local storage element
 
-              replaceName();
-                  function replaceName() {
-                      let name = document.getElementsByClassName("spanName");
-                      for (var i = 0; i < name.length; i++) {
-                          name[i].innerHTML = userName;
-                      }
-                  } // use local storage element to replace text within spanName class
+                
+                function replaceName() {
+                    let name = document.getElementsByClassName("spanName");
+                    for (var i = 0; i < name.length; i++) {
+                        name[i].innerHTML = userName;
+                    }
+                } // use local storage element to replace text within spanName class
+                replaceName();
 
-              displayText();
-                  function displayText() {
-                      let texts = document.getElementsByClassName("hidden");
-                      for (var i = 0; i < texts.length; i++) {
-                          texts[i].style.display = "block";
-                      }
-                  } // display website
+                
+                function displayText() {
+                    let texts = document.getElementsByClassName("hidden");
+                    for (var i = 0; i < texts.length; i++) {
+                        texts[i].style.display = "block";
+                    }
+                } // display website
+                displayText();
 
-              hideIntro();
-              function hideIntro() {
-                      let intro = document.querySelectorAll(".intro,.errorMessage");
-                      for (var i = 0; i < intro.length; i++) {
-                          intro[i].style.display = "none";
-                      }
-                  }
-              } // hide introduction
+                
+                function hideIntro() {
+                    let intro = document.querySelectorAll(".intro,.errorMessage");
+                    for (var i = 0; i < intro.length; i++) {
+                        intro[i].style.display = "none";
+                    }
+                }// hide introduction
+                hideIntro();
+            } 
 
-          });
-      }
-  }); 
+            
+            function removeCover() {
+                document.body.style.backgroundImage = "none";
+                document.body.style.backgroundImageSize = "none";
+            }
+            removeCover();
+
+        });
+    }
+});
 
 // replaces name across all instances outside of intro javascript funtion
 const userName = localStorage.getItem('nameInput');
 
+
+function replaceName() {
+    let spanName = document.getElementsByClassName("spanName");
+    for (var i = 0; i < spanName.length; i++) {
+        spanName[i].innerHTML = userName;
+        // spanName[i].value = userName; //if a name has been saved in local storage, the name will appear in intro submit field
+    }
+}
+
 replaceName();
-              function replaceName() {
-                  let spanName = document.getElementsByClassName("spanName");
-                  for (var i = 0; i < spanName.length; i++) {
-                      spanName[i].innerHTML = userName;
-                      // spanName[i].value = userName; //if a name has been saved in local storage, the name will appear in intro submit field
-                  }
-              }
 
+
+function rememberUser() {
+    if (userName) {
+
+        function displayText() {
+            let texts = document.getElementsByClassName("hidden");
+            for (var i = 0; i < texts.length; i++) {
+                texts[i].style.display = "block";
+            }
+        } // display website
+        displayText();
+
+
+        function hideIntro() {
+            let intro = document.querySelectorAll(".intro,.errorMessage");
+            for (var i = 0; i < intro.length; i++) {
+                intro[i].style.display = "none";
+            }
+        }
+    } // hide introduction
+    hideIntro();
+
+
+    function removeCover() {
+        document.body.style.backgroundImage = "none";
+        document.body.style.backgroundImageSize = "none";
+    }
+    removeCover();
+};
 rememberUser();
-              function rememberUser() {
-                if (userName) {
-                  displayText();
-                  function displayText() {
-                      let texts = document.getElementsByClassName("hidden");
-                      for (var i = 0; i < texts.length; i++) {
-                          texts[i].style.display = "block";
-                      }
-                  } // display website
-
-              hideIntro();
-              function hideIntro() {
-                      let intro = document.querySelectorAll(".intro,.errorMessage");
-                      for (var i = 0; i < intro.length; i++) {
-                          intro[i].style.display = "none";
-                      }
-                  }
-                } // hide introduction
-              };
-            
 
 
-              
-                
-              
-  
+
+
+
+
+
 
 
 
