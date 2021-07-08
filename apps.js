@@ -104,6 +104,12 @@ window.addEventListener("DOMContentLoaded", function (e) {
             }
             removeCover();
 
+            function welcomeMessage() {
+                document.getElementById('welcome').style.display = "flex";
+                document.getElementById('welcomeBack').style.display = "none";
+            }
+            welcomeMessage();
+
         });
     }
 });
@@ -134,9 +140,15 @@ function rememberUser() {
         } // display website
         displayText();
 
+        function welcomeBackMessage() {
+            document.getElementById('welcome').style.display = "none";
+            document.getElementById('welcomeBack').style.display = "flex";
+        }
+        welcomeBackMessage();
+        
 
         function hideIntro() {
-            let intro = document.querySelectorAll(".intro,.errorMessage");
+            let intro = document.querySelectorAll(".intro");
             for (var i = 0; i < intro.length; i++) {
                 intro[i].style.display = "none";
             }

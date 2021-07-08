@@ -24,14 +24,14 @@
             Downside Books
         </h1>
 
-        <p class="introParagraph">
+        <!-- <p class="introParagraph">
             I'm glad you're here, but since you've come all this way, why don't you tell me a little about yourself?
-        </p>
+        </p> -->
 
         <form id="name">
             <label for="firstName">First Name</label>
             <input type="text" id="inputName" name="firstName" class="spanName" value="">
-            <input type="submit" value="Submit">
+            <input type="submit" value="Enter">
         </form>
 
 
@@ -69,7 +69,10 @@
 
 
     <main class="hidden">
-        <div>
+        <div id="welcome">
+            <h3>Welcome, <span class="spanName"></span>.</h3>
+        </div>
+        <div id="welcomeBack">
             <h3>Welcome back, <span class="spanName"></span>.</h3>
         </div>
 

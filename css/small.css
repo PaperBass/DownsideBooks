@@ -20,12 +20,16 @@ a:link {
 }
 
 .intro {
-    display: block;
+    display: flex;
+    flex-direction: column;
     color: white;
+    align-items: center;
 }
 
 
-
+.introTitle {
+    align-items: center;
+}
 
 .errorMessage {
     display: none;
