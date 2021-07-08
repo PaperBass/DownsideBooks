@@ -183,6 +183,8 @@ footer {
     background-color: lightgray;
     padding: 3px 10px 3px 10px;
     max-width: 100%;
+    bottom: 0;
+    
 }
 
 .subhead::first-letter {
@@ -235,6 +237,12 @@ footer {
         flex-basis: 20%;
     }
 
-
+    .bottomRow {
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        font-size: 25px;
+    }
 
 } /* end of large media query */
