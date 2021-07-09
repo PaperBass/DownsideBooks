@@ -239,6 +239,32 @@ footer {
         font-size: 25px;
     }
 
+    #topNavBurger {
+        padding-top: 2rem;
+        padding-right: 1.5rem;
+        max-width: 40px;
+        display: none;
+    }
+    
+    
+    #topCancelMenu {
+       max-width: 2rem;
+       justify-self: right;
+       display: none;
+    }
+
+    #topLinks {
+        display: flex;
+        font-style: italic;
+        list-style: none;
+        font-size: 1.5rem;
+        background-color: lavenderblush;
+        border-radius: 20px;
+        box-shadow: 4px 7px 4px rgba(0, 0, 0, .3);
+        padding-inline-start: 0;
+        flex-direction: row;
+    }
+
 
 } /* end of medium media query */
 
