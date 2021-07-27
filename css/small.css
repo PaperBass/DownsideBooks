@@ -37,6 +37,10 @@ a:link {
     font-size: 3rem;
 }
 
+#takeName {
+    font-size: 2rem;
+}
+
 .errorMessage {
     display: none;
     color: red;
