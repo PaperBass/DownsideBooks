@@ -8,6 +8,8 @@ body.home {
     font-size: 16px;
     background-image: url("/images/coverPage.png");
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 body {
@@ -125,6 +127,9 @@ a:link {
     justify-content: flex-end;
 }
 /* end navigation formatting */
+#welcome, #welcomeBack {
+    justify-content: center;
+}
 
 .gridContainer {
     max-width: 1335px;
