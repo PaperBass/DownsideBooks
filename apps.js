@@ -72,7 +72,7 @@ function scrollFunction() {
 window.addEventListener("DOMContentLoaded", function (e) {
     console.log("Page Loaded")
 
-    const findForm = document.forms['name']; // finds the 'name' form in index.html
+    const findForm = document.forms['takeName']; // finds the 'name' form in index.html
 
     if (findForm) { // if the form is found, this function operates
         findForm.addEventListener('submit', function (e) { // the function includes an event listener for the submit button
