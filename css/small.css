@@ -83,7 +83,7 @@ a:link {
     font-style: italic;
     list-style: none;
     font-size: 1.5rem;
-    background-color: lavenderblush;
+    background-color: white;
     border-radius: 20px;
     box-shadow: 4px 7px 4px rgba(0, 0, 0, .3);
     padding-inline-start: 0;
@@ -264,7 +264,6 @@ footer {
     #topCancelMenu {
        max-width: 2rem;
        justify-self: right;
-       display: none;
     }
 
     #topLinks {
@@ -272,7 +271,7 @@ footer {
         font-style: italic;
         list-style: none;
         font-size: 1.5rem;
-        background-color: lavenderblush;
+        background-color: white;
         border-radius: 20px;
         box-shadow: 4px 7px 4px rgba(0, 0, 0, .3);
         padding-inline-start: 0;
@@ -292,7 +291,6 @@ footer {
     }
 
     .bottomRow {
-        
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -303,5 +301,16 @@ footer {
         display: flex;
         justify-content: center;
     }
+
+    #topCancelMenu {
+       display: none;
+     }
+
+     #topNavBurger {
+         display: none !important;
+     }
+     #topLinks {
+         display: flex !important;
+     }
 
 } /* end of large media query */

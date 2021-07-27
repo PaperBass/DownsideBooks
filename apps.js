@@ -44,10 +44,8 @@ let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function scrollFunction() {
-    console.log(sticky)
-    console.log(window.pageYOffset)
-   console.log(window.pageYOffset > sticky ? 'true' : 'false')
-    if (window.pageYOffset > sticky) {
+   
+    if (window.pageYOffset > sticky && screen.width < 1024) {
         navbar.classList.add("sticky")
         burger.style.opacity = "0.5";
         let y = document.getElementById('topNavBurger');
