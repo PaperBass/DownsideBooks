@@ -1,67 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
 
-    <title>Submit | Downside Books</title>
+    <title>Home | Downside Books</title>
+
 </head>
+
 <body>
-    <header>
-        <div class="titleRow">
-            <h1 class="siteTitle">Downside Books</h1>
+   
 
-            <div class="menuButton">
-                <img id="topNavMenu" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu"
-                    onclick="topLinks()">
+    <header >
+        <div id="titleRow">
+            <a href="/index.html"><h1 class="siteTitle">Downside Books</h1></a>
+            <div class="navContainer" id="burger">
+                <nav >
+                    <ul id="topLinks">
 
+                        <li><a href="index.html" target="_blank">Home</a></li>
+                        <li><a href="about.html" target="_blank">About</a></li>
+                        <li><a href="submit.html" target="_blank">Submit</a></li>
+                        <li>
+                            <img id="topCancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel"
+                                onclick="topLinks()">
+                        </li>
+                    </ul>
+                    <img id="topNavBurger" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png"
+                        alt="Navigation Menu" onclick="topLinks()">
+                </nav>
 
             </div>
+            <!-- <div class="menuButton">
+                <img id="topNavBurger" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu"
+                    onclick="topLinks()">
+            </div> -->
         </div>
     </header>
 
-    <div class="navContainer">
-        <nav>
-            <ul id="topLinks">
-                <li>
-                    <img id="topCancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel" onclick="topLinks()">
-                </li>
-                <li><a href="index.html" target="_blank">Home</a></li>
-                <li><a href="about.html" target="_blank">About</a></li>
-                <li><a href="submit.html" target="_blank">Submit</a></li>
-            </ul>
-        </nav>
-    </div>
-    
-    <main>
 
-        <article>
-            <h1>Submit</h1>
-        </article>
 
-    </main>
 
-    <footer>
-        <div class="bottomColumn">
+
+
+    <footer >
+        <div class="bottomRow">
             <div>contact:</div>
             <div>downside&#64;gmail.com</div>
-            <div>
+            <div><button class="clearName" onclick="localStorage.removeItem('nameInput')">clear name</button>
+
+            <!-- <div>
                 <aside id="bottomLinks">
                     <a href="index.html" target="_blank">Home</a>
                     <a href="about.html" target="_blank">About</a>
                     <a href="submit.html" target="_blank">Submit</a>
                     <img id="cancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel" onclick="bottomLinks()">
                 </aside>
-                <img id="bottomNavMenu" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu" onclick="bottomLinks()">
-            </div>
+                <img id="bottomNavMenu" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png" alt="Menu"
+                    onclick="bottomLinks()">
+            </div> -->
         </div>
-    </footer>    <script src="apps.js"></script>
+    </footer>
+    <script src="apps.js"></script>
 </body>
+
 </html>

@@ -3,11 +3,16 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /* * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; } */
 
-body {
+body.home {
     font-family: 'Lato', sans-serif;
     font-size: 16px;
     background-image: url("/images/coverPage.png");
     background-size: cover;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 a:link {
