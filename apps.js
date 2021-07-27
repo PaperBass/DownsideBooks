@@ -52,9 +52,11 @@ function scrollFunction() {
         burger.style.opacity = "0.5";
         let y = document.getElementById('topNavBurger');
         let x = document.getElementById('topLinks');
+        let z = document.getElementById('titleRow');
             
                 x.style.display = "none";
                 y.style.display = "flex";
+                z.style.justifyContent = "flex-end";
             
 
     } else {
@@ -62,9 +64,11 @@ function scrollFunction() {
         burger.style.opacity = "1";
         let y = document.getElementById('topNavBurger');
         let x = document.getElementById('topLinks');
+        let z = document.getElementById('titleRow');
     
             x.style.display = "flex";
             y.style.display = "none";
+            z.style.justifyContent = "space-between";
             
     }
 }
