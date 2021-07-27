@@ -44,7 +44,9 @@ let sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
 function scrollFunction() {
-    
+    console.log(sticky)
+    console.log(window.pageYOffset)
+   console.log(window.pageYOffset > sticky ? 'true' : 'false')
     if (window.pageYOffset > sticky) {
         navbar.classList.add("sticky")
         burger.style.opacity = "0.5";
@@ -174,15 +176,16 @@ function rememberUser() {
                 intro[i].style.display = "none";
             }
         }
+        hideIntro();
+
+
+        function removeCover() {
+            document.body.style.backgroundImage = "none";
+            document.body.style.backgroundImageSize = "none";
+        }
+        removeCover();
     } // hide introduction
-    hideIntro();
-
-
-    function removeCover() {
-        document.body.style.backgroundImage = "none";
-        document.body.style.backgroundImageSize = "none";
-    }
-    removeCover();
+  
 };
 rememberUser();
 

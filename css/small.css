@@ -220,11 +220,10 @@ footer {
         justify-content: space-between;
     }
   
-    /* article {
+    article {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    } */
+        justify-content: center;
+    }
 
     .bookContainer {
         flex-wrap: wrap;
@@ -283,6 +282,11 @@ footer {
         flex-direction: row;
         justify-content: space-between;
         font-size: 25px;
+    }
+
+    article {
+        display: flex;
+        justify-content: center;
     }
 
 } /* end of large media query */
