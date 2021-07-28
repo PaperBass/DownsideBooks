@@ -60,10 +60,9 @@ a:link {
 
 
 .siteTitle {
-    color: #C2847A;
+    color: #1C110A;
     padding-left: .7rem;
     font-size: 40px;
-    text-shadow: 0px 2px #000;
     font-family: raleway;
 }
 
@@ -72,7 +71,7 @@ a:link {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    background-color: #1D3557;
+    background-color: #E4D6A7;
 }
 
 
