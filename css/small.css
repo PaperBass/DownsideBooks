@@ -242,9 +242,6 @@ footer {
         flex-direction: row;
         justify-content: space-between;
     }
-    
-
-    
 
     .bookContainer {
         flex-wrap: wrap;
