@@ -71,7 +71,7 @@ a:link {
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    background-color: #E4D6A7;
+    background-color: #E9B44C;
 }
 
 
@@ -212,7 +212,7 @@ article > h3 {
 }
 
 footer {
-    background-color: lightgray;
+    background-color: #50A2A7;
     padding: 3px 10px 3px 10px;
     max-width: 100%;
     bottom: 0;
