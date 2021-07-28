@@ -141,7 +141,7 @@ a:link {
 .grid-row {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 
@@ -149,10 +149,13 @@ a:link {
     position: relative;
     width: 100%;
     flex-basis: 100%;
+    border: solid 2px #9B2915;
+    margin: 1em;
 }
 
 .bookContainer > ul {
     list-style: none;
+   
 }
 
 article > h3 {
@@ -176,11 +179,9 @@ article > h3 {
 
 
 .bookContainer img {
-    height: 100%;
+    height: 140px;
     width: 100%;
     object-fit: contain;
-    border: 2px solid rgba(144, 238, 144, 0.801);
-    border-radius: 50px;
     padding: 5px;
 }
 
