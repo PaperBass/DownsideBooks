@@ -200,13 +200,3 @@ rememberUser();
 
 
 
-// document.getElementsByClassName("spanName").item(0).innerHTML = localStorage.getItem("nameInput");
-
-// function toggleMenu() {
-//     var x = document.getElementById('bottomNavMenu');
-//     if (x.style.display === "block") {
-//         x.style.display = "none";
-//     } else {
-//         x.style.display = "block";
-//     }
-// }

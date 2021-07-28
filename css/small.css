@@ -234,8 +234,6 @@ footer {
 /* medium media query */
 @media only screen and (min-width: 768px) {
 
-    /* need to change burger menue to visible links */
-
     .titleRow {
         display: flex;
         flex-direction: row;
