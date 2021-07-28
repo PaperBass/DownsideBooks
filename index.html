@@ -1,19 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downside Books</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>Home | Downside Books</title>
+
 </head>
-<body>
-    <h1>Downside Books</h1>
-    <figure><img src="images/magnolia.jpeg" alt="Magnolia Book Cover"></figure>
-    <figcaption>
-        <p>poetry</p>
-        <h3 class="title">Womb Bo</h3>
-        <h5 class="author">L.8. Soda</h5>
-    </figcaption>
-    
+
+<body class="home">
+    <aside class="intro">
+
+        <h1 class="introTitle">
+            Downside Books
+        </h1>
+
+        <form id="takeName">
+            <label for="firstName">First Name</label>
+            <input type="text" id="inputName" name="firstName" class="spanName" value="">
+            <input type="submit" value="Enter">
+        </form>
+
+
+    </aside>
+
+    <header class="hidden">
+        <div id="titleRow">
+            <a href="/index.html">
+                <h1 class="siteTitle">
+                    Downside Books
+                </h1>
+            </a>
+            <div class="navContainer" id="burger">
+                <nav >
+                    <ul id="topLinks">
+
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="submit.html" >Submit</a></li>
+                        <li>
+                            <img id="topCancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel"
+                                onclick="topLinks()">
+                        </li>
+                    </ul>
+                    <img id="topNavBurger" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png"
+                        alt="Navigation Menu" onclick="topLinks()">
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <main class="hidden">
+        <div id="welcome">
+            <h3>Welcome, <span class="spanName"></span>.</h3>
+        </div>
+        <div id="welcomeBack">
+            <h3>Welcome back, <span class="spanName"></span>.</h3>
+        </div>
+
+        <article>
+            <div class="gridContainer">
+                <div class="grid-row">
+
+                   
+                        <div class="bookContainer" >
+                            <a href="WombBo.html" target="_blank">
+                                <figure><img src="images/magnolia.jpeg" alt="Magnolia Book Cover"></figure>
+                            </a>
+                            <ul>
+                                <li class="bookGenre">poetry</li>
+                                <li class="bookTitle">Womb Bo</li>
+                                <li class="bookAuthor">L.8. Soda</li>
+                            </ul>
+                        
+                        </div>
+                     
+
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                    <div class="bookContainer">
+                        <figure><img src="images/sheep.lice.jpeg" alt="Man and sheep"></figure>
+                    
+                        <ul>
+                            <li class="bookGenre">essay</li>
+                            <li class="bookTitle">The Lice Years</li>
+                            <li class="bookAuthor">Mom Girl</li>
+                        </ul>
+                    </div>
+
+                 </div>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="hidden">
+        <div class="bottomRow">
+            <div>contact:</div>
+            <div>downside&#64;gmail.com</div>
+            <div><button class="clearName" onclick="localStorage.removeItem('nameInput')">clear name</button>
+        </div>
+    </footer>
+    <script src="apps.js"></script>
 </body>
+
 </html>

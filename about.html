@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+
+    <title>About | Downside Books</title>
+
+</head>
+<body>
+    <header class="hidden">
+        <div id="titleRow">
+            <a href="/index.html">
+                <h1 class="siteTitle">
+                    Downside Books
+                </h1>
+            </a>
+            <div class="navContainer" id="burger">
+                <nav >
+                    <ul id="topLinks">
+
+                        <li><a href="index.html" >Home</a></li>
+                        <li><a href="about.html" >About</a></li>
+                        <li><a href="submit.html" >Submit</a></li>
+                        <li>
+                            <img id="topCancelMenu" src="images/240px-Cancel_icon.svg.png" alt="cancel"
+                                onclick="topLinks()">
+                        </li>
+                    </ul>
+                    <img id="topNavBurger" src="images/240px-Menu_(89650)_-_The_Noun_Project.svg.png"
+                        alt="Navigation Menu" onclick="topLinks()">
+                </nav>
+
+            </div>
+        </div>
+    </header>
+
+    
+    <main>
+
+        <article>
+            <div>
+                <h1>About</h1> 
+            </div>
+            <div>
+                <h2>Who we are</h2>
+             </div>
+             <div>
+                 <p class="subhead">Downside Books is an independent press focused on printing the next generation of free thinkers, imaginative creators, and inspiring writers.</p>
+            </div>
+        </article>
+
+    </main>
+
+    <footer class="hidden">
+        <div class="bottomRow">
+            <div>contact:</div>
+            <div>downside&#64;gmail.com</div>
+            <div><button class="clearName" onclick="localStorage.removeItem('nameInput')">clear name</button>
+        </div>
+    </footer>
+       <script src="apps.js"></script>
+</body>
+</html>
